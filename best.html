@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katogus.gg - Best Online Casino Bonuses and Reviews 2024</title>
+    <meta name="description" content="Katogus.gg offers the best online casino bonuses, reviews, and exclusive offers. Find top casinos like Betify, Stake, Shock, and Razed with detailed information.">
+    <meta name="keywords" content="casino bonus, online casino, Betify, Stake, Shock, Razed, casino reviews, gambling, crypto casino">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6D28D9;
+            --primary-dark: #5B21B6;
+            --secondary: #10B981;
+            --dark: #1F2937;
+            --light: #F9FAFB;
+            --accent: #F59E0B;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F172A;
+            color: #F1F5F9;
+        }
+        
+        .bg-gradient {
+            background: linear-gradient(135deg, #4338CA, #6D28D9);
+        }
+        
+        .casino-card {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .casino-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #0E9F6E;
+        }
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary);
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .rating-star {
+            color: var(--accent);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Navigation styling */
+        .nav-link {
+            position: relative;
+            padding: 0.5rem 1rem;
+            color: #CBD5E1;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: white;
+        }
+        
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .nav-link.active {
+            color: white;
+        }
+        
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* Social media section */
+        .social-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--dark);
+            color: white;
+            transition: all 0.3s ease;
+            font-size: 1.5rem;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive tables */
+        .responsive-table {
+            overflow-x: auto;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #1E293B;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #4C1D95;
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6D28D9;
+        }
+
+        /* Rating progress bars */
+        .rating-bar {
+            height: 10px;
+            background-color: #4B5563;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .rating-progress {
+            height: 100%;
+            background-color: var(--secondary);
+        }
+
+        .casino-table tr:nth-child(odd) {
+            background-color: rgba(30, 41, 59, 0.5);
+        }
+
+        .casino-table th, .casino-table td {
+            padding: 12px 16px;
+            text-align: left;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .badge-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .badge-secondary {
+            background-color: var(--secondary);
+            color: white;
+        }
+
+        .badge-accent {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        /* Accordion styles */
+        .accordion-header {
+            cursor: pointer;
+            padding: 1rem;
+            background-color: #1E293B;
+            border-radius: 0.375rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 1rem;
+            background-color: #0F172A;
+            border: 1px solid #1E293B;
+            border-radius: 0 0 0.375rem 0.375rem;
+            margin-top: -0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .accordion-header.active {
+            background-color: var(--primary);
+            border-radius: 0.375rem 0.375rem 0 0;
+        }
+
+        .warning-box {
+            background-color: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 1rem;
+            border-radius: 0.375rem;
+            margin: 1.5rem 0;
+        }
+
+        /* Mobile menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0F172A;
+            z-index: 50;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-gray-900 shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="#" class="text-white font-bold text-2xl">Katogus<span class="text-purple-500">.gg</span></a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-4">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#casinos" class="nav-link">Casinos</a>
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                    <a href="#deposit-methods" class="nav-link">Deposit Methods</a>
+                    <a href="#vip" class="nav-link">VIP Advantages</a>
+                    <a href="#social" class="nav-link">Social Media</a>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white" id="mobile-menu-button">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="flex justify-between items-center mb-8">
+            <a href="#" class="text-white font-bold text-2xl">Katogus<span class="text-purple-500">.gg</span></a>
+            <button id="close-mobile-menu">
+                <i class="fas fa-times text-white text-2xl"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col space-y-4">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#casinos" class="nav-link">Casinos</a>
+            <a href="#reviews" class="nav-link">Reviews</a>
+            <a href="#deposit-methods" class="nav-link">Deposit Methods</a>
+            <a href="#vip" class="nav-link">VIP Advantages</a>
+            <a href="#social" class="nav-link">Social Media</a>
+        </nav>
+    </div>
+    
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">Best Online Casino Bonuses and Reviews 2024</h1>
+                    <p class="text-xl mb-8 text-gray-200">Exclusive bonuses, honest reviews, and the best online casinos handpicked by Katogus.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#casinos" class="btn-primary text-center">Explore Bonuses</a>
+                        <a href="#reviews" class="btn-secondary text-center">Read Reviews</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="bg-gray-800 rounded-lg shadow-2xl p-8 w-full max-w-md">
+                        <h3 class="text-2xl font-bold mb-6 text-white text-center">Featured Bonus</h3>
+                        <div class="flex justify-center mb-6">
+                            <span class="text-5xl font-bold text-white">$500</span>
+                        </div>
+                        <p class="text-center text-gray-300 mb-6">+ 5% Rakeback on Stake Casino</p>
+                        <div class="flex justify-center">
+                            <a href="https://stake.bet/?c=StakeKatogus" target="_blank" class="btn-primary text-center w-full">Claim Bonus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Casino Bonus Section -->
+    <section id="casinos" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Exclusive Casino Bonuses</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Get the best bonuses for top online casinos, handpicked and tested by Katogus.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Betify Card -->
+                <div class="casino-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Betify</h3>
+                        <div class="flex justify-center mb-6">
+                            <div class="w-24 h-24 bg-gray-700 rounded-full flex items-center justify-center">
+                                <i class="fas fa-dice text-4xl text-purple-500"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-white">$500</span>
+                            <p class="text-gray-300">Welcome Bonus</p>
+                        </div>
+                        <div class="space-y-2 mb-6 text-left">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-300">Instant Rakeback</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-300">Crypto Deposits</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-300">5000+ Games</span>
+                            </div>
+                        </div>
+                        <a href="https://record.betify.partners/_JKJPfQAmEMBfWQTENI37dGNd7ZgqdRLk/1/" target="_blank" class="btn-primary block w-full">Claim Bonus</a>
+                    </div>
+                </div>
+                
+                <!-- Stake Card -->
+                <div class="casino-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Stake</h3>
+                        <div class="flex justify-center mb-6">
+                            <div class="w-24 h-24 bg-gray-700 rounded-full flex items-center justify-center">
+                                <i class="fas fa-coins text-4xl text-yellow-500"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-white">5%</span>
+                            <p class="text-gray-300">Instant Rakeback</p>
+                        </div>
+                        <div class="space-y-2 mb-6 text-left">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-300">Sports Betting</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-300">VIP Program</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-300">Instant Withdrawals</span>
+                            </div>
+                        </div>
+                        <a href="https://stake.bet/?c=StakeKatogus" target="_blank" class="btn-primary block w-full">Claim Bonus</a>
+                    </div>
+                </div>
+                
+                <!-- Shock Card -->
+                <div class="casino-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Shock</h3>
+                        <div class="flex justify-center mb-6">
+                            <div class="w-24 h-24 bg-gray-700 rounded-full flex items-center justify-center">
+                                <i class="fas fa-bolt text-4xl text-blue-500"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-white">$750</span>
+                            <p class="text-gray-300">Welcome Bonus</p>
+                        </div>
+                        <div class="space-y-2 mb-6 text-left">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-300">Weekly Cashback</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-300">Fast Payouts</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-300">24/7 Support</span>
+                            </div>
+                        </div>
+                        <a href="https://shock.com/?r=Katogus" target="_blank" class="btn-primary block w-full">Claim Bonus</a>
+                    </div>
+                </div>
+                
+                <!-- Razed Card -->
+                <div class="casino-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Razed</h3>
+                        <div class="flex justify-center mb-6">
+                            <div class="w-24 h-24 bg-gray-700 rounded-full flex items-center justify-center">
+                                <i class="fas fa-fire text-4xl text-red-500"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-white">$1000</span>
+                            <p class="text-gray-300">First Deposit</p>
+                        </div>
+                        <div class="space-y-2 mb-6 text-left">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-300">Daily Rewards</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-300">Mobile Friendly</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-300">Live Casino Games</span>
+                            </div>
+                        </div>
+                        <a href="https://www.razed.com/signup/?raf=Katogus" target="_blank" class="btn-primary block w-full">Claim Bonus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Casino Reviews</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Honest and in-depth reviews of the best online casinos, evaluated by our expert team.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-12 max-w-4xl mx-auto">
+                <!-- Betify Review -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg p-8">
+                    <div class="flex flex-col md:flex-row md:items-center mb-6">
+                        <div class="mb-4 md:mb-0 md:mr-6">
+                            <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center">
+                                <i class="fas fa-dice text-3xl text-purple-500"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Betify Casino Review</h3>
+                            <div class="flex items-center">
+                                <div class="flex mr-2">
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star-half-alt rating-star"></i>
+                                </div>
+                                <span class="text-gray-300">4.5/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <p class="text-gray-300 mb-4">Betify is a modern online casino offering a vast selection of games, generous bonuses, and a user-friendly interface. With over 5,000 games from top providers, players can enjoy slots, table games, and live dealer options.</p>
+                        <p class="text-gray-300">The platform stands out with its instant rakeback system, comprehensive VIP program, and fast withdrawal times. The casino supports multiple payment methods including cryptocurrencies for seamless transactions.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-3">Pros</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Generous welcome bonus up to $500</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Instant rakeback system</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">5,000+ games from top providers</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Multiple payment options</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-3">Cons</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Limited customer support hours</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Some country restrictions</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-lg font-semibold text-white mb-3">Ratings</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Games Selection</span>
+                                    <span class="text-gray-300">4.8/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 96%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Bonuses & Promotions</span>
+                                    <span class="text-gray-300">4.5/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Payment Methods</span>
+                                    <span class="text-gray-300">4.3/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 86%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Customer Support</span>
+                                    <span class="text-gray-300">4.0/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">User Experience</span>
+                                    <span class="text-gray-300">4.7/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 94%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="https://record.betify.partners/_JKJPfQAmEMBfWQTENI37dGNd7ZgqdRLk/1/" target="_blank" class="btn-primary">Visit Betify</a>
+                    </div>
+                </div>
+                
+                <!-- Stake Review -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg p-8">
+                    <div class="flex flex-col md:flex-row md:items-center mb-6">
+                        <div class="mb-4 md:mb-0 md:mr-6">
+                            <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center">
+                                <i class="fas fa-coins text-3xl text-yellow-500"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Stake Casino Review</h3>
+                            <div class="flex items-center">
+                                <div class="flex mr-2">
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                </div>
+                                <span class="text-gray-300">5.0/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <p class="text-gray-300 mb-4">Stake is a premier crypto casino and sports betting platform known for its exceptional user experience and innovative features. The casino offers one of the most transparent and fair gaming experiences in the industry.</p>
+                        <p class="text-gray-300">With its 5% instant rakeback, extensive VIP program, and wide range of games, Stake has become a favorite among experienced players. The platform excels in providing instant withdrawals and responsive 24/7 customer support.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-3">Pros</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">5% instant rakeback on all bets</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Outstanding VIP program with rewards</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Instant withdrawals without delays</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Comprehensive sports betting section</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">24/7 live customer support</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-3">Cons</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">No traditional welcome bonus</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Not available in certain regions</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-lg font-semibold text-white mb-3">Ratings</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Games Selection</span>
+                                    <span class="text-gray-300">5.0/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Bonuses & Promotions</span>
+                                    <span class="text-gray-300">4.8/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 96%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Payment Methods</span>
+                                    <span class="text-gray-300">5.0/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Customer Support</span>
+                                    <span class="text-gray-300">5.0/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">User Experience</span>
+                                    <span class="text-gray-300">5.0/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="https://stake.bet/?c=StakeKatogus" target="_blank" class="btn-primary">Visit Stake</a>
+                    </div>
+                </div>
+                
+                <!-- Shock Review -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg p-8">
+                    <div class="flex flex-col md:flex-row md:items-center mb-6">
+                        <div class="mb-4 md:mb-0 md:mr-6">
+                            <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center">
+                                <i class="fas fa-bolt text-3xl text-blue-500"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Shock Casino Review</h3>
+                            <div class="flex items-center">
+                                <div class="flex mr-2">
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="far fa-star rating-star"></i>
+                                </div>
+                                <span class="text-gray-300">4.0/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <p class="text-gray-300 mb-4">Shock Casino is a relatively new but impressive platform that offers a clean, modern gaming experience with a strong focus on slot games and regular promotions. The casino features a welcome bonus of up to $750 for new players.</p>
+                        <p class="text-gray-300">The platform offers weekly cashback, fast payouts, and a growing selection of games from established providers. While newer than some competitors, Shock is building a solid reputation for reliability and player satisfaction.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-3">Pros</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Welcome bonus up to $750</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Weekly cashback program</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Fast payouts within 24 hours</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">24/7 customer support</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-3">Cons</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Smaller game library than competitors</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Limited payment methods</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Less established reputation</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-lg font-semibold text-white mb-3">Ratings</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Games Selection</span>
+                                    <span class="text-gray-300">3.8/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 76%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Bonuses & Promotions</span>
+                                    <span class="text-gray-300">4.2/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 84%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Payment Methods</span>
+                                    <span class="text-gray-300">3.5/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Customer Support</span>
+                                    <span class="text-gray-300">4.5/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">User Experience</span>
+                                    <span class="text-gray-300">4.0/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="https://shock.com/?r=Katogus" target="_blank" class="btn-primary">Visit Shock</a>
+                    </div>
+                </div>
+                
+                <!-- Razed Review -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg p-8">
+                    <div class="flex flex-col md:flex-row md:items-center mb-6">
+                        <div class="mb-4 md:mb-0 md:mr-6">
+                            <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center">
+                                <i class="fas fa-fire text-3xl text-red-500"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Razed Casino Review</h3>
+                            <div class="flex items-center">
+                                <div class="flex mr-2">
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star-half-alt rating-star"></i>
+                                </div>
+                                <span class="text-gray-300">4.5/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <p class="text-gray-300 mb-4">Razed Casino is a dynamic platform that offers a substantial welcome bonus of up to $1000 on your first deposit. The casino specializes in providing an extensive range of games with a particular focus on live casino experiences.</p>
+                        <p class="text-gray-300">With daily rewards, mobile-friendly design, and an impressive selection of live dealer games, Razed is perfect for players who enjoy an interactive casino experience. The platform also offers quick withdrawals and reliable customer service.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-3">Pros</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Generous $1000 first deposit bonus</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Daily rewards program</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Excellent mobile experience</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Extensive live casino selection</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Multiple payment options</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-3">Cons</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">High wagering requirements</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                    <span class="text-gray-300">Limited customer support hours</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-lg font-semibold text-white mb-3">Ratings</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Games Selection</span>
+                                    <span class="text-gray-300">4.7/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 94%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Bonuses & Promotions</span>
+                                    <span class="text-gray-300">4.6/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Payment Methods</span>
+                                    <span class="text-gray-300">4.4/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">Customer Support</span>
+                                    <span class="text-gray-300">4.0/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-300">User Experience</span>
+                                    <span class="text-gray-300">4.5/5</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="https://www.razed.com/signup/?raf=Katogus" target="_blank" class="btn-primary">Visit Razed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Deposit Methods Section -->
+    <section id="deposit-methods" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Deposit Methods</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Find the best payment options for your favorite online casinos.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <!-- Cryptocurrency Payments -->
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <div class="feature-icon mr-4">
+                                <i class="fab fa-bitcoin"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Cryptocurrency</h3>
+                        </div>
+                        <p class="text-gray-300 mb-6">Fast, secure, and anonymous transactions using various cryptocurrencies. Enjoy minimal fees and instant deposits across all casinos.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="badge badge-primary">Bitcoin</span>
+                            <span class="badge badge-primary">Ethereum</span>
+                            <span class="badge badge-primary">Litecoin</span>
+                            <span class="badge badge-primary">Bitcoin Cash</span>
+                            <span class="badge badge-primary">USDT</span>
+                            <span class="badge badge-primary">Dogecoin</span>
+                        </div>
+                        <div class="text-sm text-gray-400">
+                            <p><strong>Processing Time:</strong> Instant deposits, 0-30 minutes for withdrawals</p>
+                            <p><strong>Fees:</strong> Minimal network fees</p>
+                            <p><strong>Limits:</strong> Usually high deposit and withdrawal limits</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Credit/Debit Cards -->
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <div class="feature-icon mr-4">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Credit/Debit Cards</h3>
+                        </div>
+                        <p class="text-gray-300 mb-6">The most common and straightforward payment method. Use your Visa, Mastercard, or other cards for quick deposits at most casinos.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="badge badge-secondary">Visa</span>
+                            <span class="badge badge-secondary">Mastercard</span>
+                            <span class="badge badge-secondary">Maestro</span>
+                            <span class="badge badge-secondary">American Express</span>
+                        </div>
+                        <div class="text-sm text-gray-400">
+                            <p><strong>Processing Time:</strong> Instant deposits, 1-5 days for withdrawals</p>
+                            <p><strong>Fees:</strong> Typically 1-3% or fixed fee</p>
+                            <p><strong>Limits:</strong> Medium deposit and withdrawal limits</p>
+                        </div>
+                    </div>
+                    
+                    <!-- E-Wallets -->
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <div class="feature-icon mr-4">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">E-Wallets</h3>
+                        </div>
+                        <p class="text-gray-300 mb-6">Fast and convenient payment solutions that act as intermediaries between your bank and the casino, offering enhanced security and quick transactions.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="badge badge-accent">PayPal</span>
+                            <span class="badge badge-accent">Skrill</span>
+                            <span class="badge badge-accent">Neteller</span>
+                            <span class="badge badge-accent">ecoPayz</span>
+                            <span class="badge badge-accent">MuchBetter</span>
+                        </div>
+                        <div class="text-sm text-gray-400">
+                            <p><strong>Processing Time:</strong> Instant deposits, 0-24 hours for withdrawals</p>
+                            <p><strong>Fees:</strong> 0-2% depending on the service</p>
+                            <p><strong>Limits:</strong> Medium to high limits</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Prepaid Cards & Vouchers -->
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <div class="feature-icon mr-4">
+                                <i class="fas fa-ticket-alt"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Prepaid Cards & Vouchers</h3>
+                        </div>
+                        <p class="text-gray-300 mb-6">Prepaid solutions that allow you to deposit funds without sharing banking details. Perfect for players who prioritize privacy and budget control.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="badge badge-primary">Paysafecard</span>
+                            <span class="badge badge-primary">CASHlib</span>
+                            <span class="badge badge-primary">Neosurf</span>
+                            <span class="badge badge-primary">AstroPay</span>
+                        </div>
+                        <div class="text-sm text-gray-400">
+                            <p><strong>Processing Time:</strong> Instant deposits, not available for withdrawals</p>
+                            <p><strong>Fees:</strong> Usually fee-free for deposits</p>
+                            <p><strong>Limits:</strong> Lower limits compared to other methods</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="responsive-table mb-12">
+                    <table class="w-full casino-table rounded-lg overflow-hidden border-collapse">
+                        <thead class="bg-gray-800 text-white">
+                            <tr>
+                                <th>Casino</th>
+                                <th>Deposit Methods</th>
+                                <th>Withdrawal Methods</th>
+                                <th>Min Deposit</th>
+                                <th>Withdrawal Time</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-300">
+                            <tr>
+                                <td class="font-semibold">Betify</td>
+                                <td>Crypto, Cards, Vouchers</td>
+                                <td>Crypto, Bank Transfer</td>
+                                <td>$20</td>
+                                <td>0-24 hours</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Stake</td>
+                                <td>Crypto, Cards, E-wallets</td>
+                                <td>Crypto, Bank Transfer</td>
+                                <td>$20</td>
+                                <td>Instant (Crypto)</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Shock</td>
+                                <td>Crypto, Cards</td>
+                                <td>Crypto, Bank Transfer</td>
+                                <td>$10</td>
+                                <td>0-24 hours</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Razed</td>
+                                <td>Crypto, Cards, E-wallets</td>
+                                <td>Crypto, E-wallets, Bank</td>
+                                <td>$20</td>
+                                <td>0-48 hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="warning-box">
+                    <h4 class="text-lg font-semibold text-yellow-500 mb-2">Important Note on Payments</h4>
+                    <p class="text-gray-300">Always check the specific payment methods available in your region, as they may vary based on your location. Also, be aware of any processing fees that might apply to deposits or withdrawals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- VIP Advantages Section -->
+    <section id="vip" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">VIP Advantages</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Discover the exclusive benefits and premium treatment offered to VIP players at top online casinos.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+                        <div class="flex justify-center mb-6">
+                            <div class="w-16 h-16 bg-indigo-900 rounded-full flex items-center justify-center">
+                                <i class="fas fa-gem text-2xl text-indigo-400"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4 text-center">Exclusive Bonuses</h3>
+                        <p class="text-gray-300 text-center">Access special promotions, higher bonus amounts, and personalized offers not available to regular players.</p>
+                    </div>
+                    
+                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+                        <div class="flex justify-center mb-6">
+                            <div class="w-16 h-16 bg-indigo-900 rounded-full flex items-center justify-center">
+                                <i class="fas fa-hand-holding-usd text-2xl text-indigo-400"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4 text-center">Cashback & Rebates</h3>
+                        <p class="text-gray-300 text-center">Receive regular cashback on losses and higher rakeback percentages, reducing your overall risk.</p>
+                    </div>
+                    
+                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+                        <div class="flex justify-center mb-6">
+                            <div class="w-16 h-16 bg-indigo-900 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user-tie text-2xl text-indigo-400"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4 text-center">Personal Account Manager</h3>
+                        <p class="text-gray-300 text-center">Get dedicated support from a personal VIP host who handles your requests and offers tailored assistance.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg mb-12">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-6">VIP Comparison By Casino</h3>
+                        
+                        <div class="space-y-6">
+                            <!-- Betify VIP -->
+                            <div class="border-b border-gray-700 pb-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-dice text-xl text-purple-500"></i>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-white">Betify VIP Program</h4>
+                                </div>
+                                <p class="text-gray-300 mb-4">Betify offers a multi-tier VIP program with increasing benefits as you progress through levels. The program is based on your betting activity and loyalty to the platform.</p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h5 class="text-lg font-semibold text-white mb-2">Key Features:</h5>
+                                        <ul class="space-y-1 text-gray-300">
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Up to 15% weekly cashback</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Regular reload bonuses</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Personal VIP host (higher tiers)</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Birthday bonuses and gifts</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-lg font-semibold text-white mb-2">VIP Levels:</h5>
+                                        <ul class="space-y-1 text-gray-300">
+                                            <li>Bronze - Entry level</li>
+                                            <li>Silver - Increased cashback</li>
+                                            <li>Gold - Personal host access</li>
+                                            <li>Platinum - Premium rewards</li>
+                                            <li>Diamond - Elite benefits</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Stake VIP -->
+                            <div class="border-b border-gray-700 pb-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-coins text-xl text-yellow-500"></i>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-white">Stake VIP Program</h4>
+                                </div>
+                                <p class="text-gray-300 mb-4">Stake's VIP program is one of the most prestigious in the industry, offering exceptional benefits and personalized service. The program works on a level system that rewards consistent play.</p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h5 class="text-lg font-semibold text-white mb-2">Key Features:</h5>
+                                        <ul class="space-y-1 text-gray-300">
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>5% base rakeback with increases for VIPs</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Weekly and monthly bonus drops</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>24/7 dedicated VIP host</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Exclusive VIP forum access</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Potential for real-world gifts and events</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-lg font-semibold text-white mb-2">VIP Benefits:</h5>
+                                        <ul class="space-y-1 text-gray-300">
+                                            <li>Automatic level increases based on play</li>
+                                            <li>Higher withdrawal and deposit limits</li>
+                                            <li>Customized bonus offers</li>
+                                            <li>Faster withdrawal processing</li>
+                                            <li>Access to exclusive games and tournaments</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Shock VIP -->
+                            <div class="border-b border-gray-700 pb-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-bolt text-xl text-blue-500"></i>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-white">Shock VIP Program</h4>
+                                </div>
+                                <p class="text-gray-300 mb-4">Shock offers a straightforward VIP program with clear benefits and a focus on regular cashback rewards. Players progress through levels based on their activity.</p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h5 class="text-lg font-semibold text-white mb-2">Key Features:</h5>
+                                        <ul class="space-y-1 text-gray-300">
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Weekly cashback up to 10%</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Deposit bonuses and free spins</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Priority customer support</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Higher betting limits</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-lg font-semibold text-white mb-2">VIP Structure:</h5>
+                                        <ul class="space-y-1 text-gray-300">
+                                            <li>Level 1 - Basic benefits</li>
+                                            <li>Level 2 - Increased cashback rate</li>
+                                            <li>Level 3 - Weekly bonuses added</li>
+                                            <li>Level 4 - Priority support access</li>
+                                            <li>Level 5 - Full VIP package</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Razed VIP -->
+                            <div>
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-fire text-xl text-red-500"></i>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-white">Razed VIP Program</h4>
+                                </div>
+                                <p class="text-gray-300 mb-4">Razed offers an exclusive VIP program that rewards loyal players with a comprehensive package of benefits, focusing on both gaming advantages and personalized service.</p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h5 class="text-lg font-semibold text-white mb-2">Key Features:</h5>
+                                        <ul class="space-y-1 text-gray-300">
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Daily rewards program</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>VIP-exclusive tournaments</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Up to 15% weekly cashback</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Personal account manager</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                                <span>Tailored bonus packages</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-lg font-semibold text-white mb-2">How to Qualify:</h5>
+                                        <ul class="space-y-1 text-gray-300">
+                                            <li>VIP status based on regular play and deposits</li>
+                                            <li>Invitation-only for higher tiers</li>
+                                            <li>Continuous activity required to maintain status</li>
+                                            <li>Special consideration for high rollers</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-6">FAQs About VIP Programs</h3>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <div class="accordion-header">
+                                    <h4 class="text-lg font-semibold text-white">How do I qualify for VIP status?</h4>
+                                    <i class="fas fa-chevron-down text-white"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p class="text-gray-300">Most casinos have automatic VIP systems that track your activity, deposits, and wagers. As you play regularly, you'll progress through tiers and may eventually receive a direct invitation to higher VIP levels. Some exclusive tiers are invitation-only and require consistent high-volume play.</p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="accordion-header">
+                                    <h4 class="text-lg font-semibold text-white">What is rakeback and how does it work?</h4>
+                                    <i class="fas fa-chevron-down text-white"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p class="text-gray-300">Rakeback is a loyalty reward that returns a percentage of the "rake" (the fee the casino takes from each bet) back to players. For example, with a 5% rakeback, if you bet $1000 and the casino takes a 5% rake ($50), you would receive $2.50 back (5% of $50). Rakeback is usually paid automatically either instantly or on a weekly basis.</p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="accordion-header">
+                                    <h4 class="text-lg font-semibold text-white">Can I lose my VIP status?</h4>
+                                    <i class="fas fa-chevron-down text-white"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p class="text-gray-300">Yes, VIP status at most casinos requires maintaining a certain level of activity. If your play decreases significantly over time, your VIP level may be downgraded. The specific requirements vary by casino, but generally, continued regular play is necessary to maintain your status and benefits.</p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="accordion-header">
+                                    <h4 class="text-lg font-semibold text-white">What does a VIP host or account manager do?</h4>
+                                    <i class="fas fa-chevron-down text-white"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p class="text-gray-300">A VIP host or account manager is your personal point of contact at the casino. They help with:</p>
+                                    <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-300">
+                                        <li>Creating customized bonus offers</li>
+                                        <li>Resolving account issues quickly</li>
+                                        <li>Expediting withdrawal requests</li>
+                                        <li>Providing information about new games and features</li>
+                                        <li>Arranging special promotions and events</li>
+                                        <li>Handling specific requests or accommodations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="accordion-header">
+                                    <h4 class="text-lg font-semibold text-white">Are VIP bonuses better than regular bonuses?</h4>
+                                    <i class="fas fa-chevron-down text-white"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p class="text-gray-300">Yes, VIP bonuses typically offer several advantages over regular bonuses:</p>
+                                    <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-300">
+                                        <li>Higher bonus amounts</li>
+                                        <li>Lower wagering requirements</li>
+                                        <li>Better conversion rates</li>
+                                        <li>More flexible terms and conditions</li>
+                                        <li>Customized to your playing style</li>
+                                        <li>More frequent reward opportunities</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Social Media Section -->
+    <section id="social" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Connect With Katogus</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Follow me on social media for the latest news, promotions, and casino streams.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Twitter -->
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg text-center">
+                        <a href="https://twitter.com/katogus" target="_blank" class="block">
+                            <div class="flex justify-center mb-6">
+                                <div class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Twitter</h3>
+                            <p class="text-gray-300 mb-6">Follow for daily updates, bonus codes, and casino news.</p>
+                            <span class="btn-primary inline-block">@katogus</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Discord -->
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg text-center">
+                        <a href="https://discord.gg/katogus" target="_blank" class="block">
+                            <div class="flex justify-center mb-6">
+                                <div class="social-icon">
+                                    <i class="fab fa-discord"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Discord</h3>
+                            <p class="text-gray-300 mb-6">Join our community for exclusive giveaways and chat.</p>
+                            <span class="btn-primary inline-block">discord.gg/katogus</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Instagram -->
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg text-center">
+                        <a href="https://instagram.com/katogus" target="_blank" class="block">
+                            <div class="flex justify-center mb-6">
+                                <div class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Instagram</h3>
+                            <p class="text-gray-300 mb-6">Check out winning moments and behind-the-scenes content.</p>
+                            <span class="btn-primary inline-block">@katogus</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mt-16 bg-gray-800 rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">Watch My Latest Streams</h3>
+                    <p class="text-gray-300 mb-8 text-center">I stream casino games regularly on Kick and YouTube. Join me for big wins, bonus hunts, and fun interactions!</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+                            <div class="p-4">
+                                <h4 class="text-lg font-semibold text-white mb-2">Kick.com</h4>
+                                <p class="text-gray-300 mb-4">Daily casino streams with high-stakes gameplay and viewer interaction.</p>
+                                <a href="https://kick.com/katogus" target="_blank" class="btn-primary inline-block">Watch on Kick</a>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+                            <div class="p-4">
+                                <h4 class="text-lg font-semibold text-white mb-2">YouTube</h4>
+                                <p class="text-gray-300 mb-4">Highlights, big wins, and tutorial videos about online casinos.</p>
+                                <a href="https://youtube.com/@katogus" target="_blank" class="btn-primary inline-block">Watch on YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-16 bg-gray-800 rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-white mb-6">Contact Me</h3>
+                    
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-white mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-white mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-white mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-6">Katogus.gg</h3>
+                    <p class="text-gray-400 mb-6">Your trusted source for the best online casino bonuses and honest reviews.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://twitter.com/katogus" target="_blank" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="https://discord.gg/katogus" target="_blank" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                        <a href="https://instagram.com/katogus" target="_blank" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#casinos" class="text-gray-400 hover:text-white">Casinos</a></li>
+                        <li><a href="#reviews" class="text-gray-400 hover:text-white">Reviews</a></li>
+                        <li><a href="#deposit-methods" class="text-gray-400 hover:text-white">Deposit Methods</a></li>
+                        <li><a href="#vip" class="text-gray-400 hover:text-white">VIP Advantages</a></li>
+                        <li><a href="#social" class="text-gray-400 hover:text-white">Social Media</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">Casinos</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://record.betify.partners/_JKJPfQAmEMBfWQTENI37dGNd7ZgqdRLk/1/" target="_blank" class="text-gray-400 hover:text-white">Betify Casino</a></li>
+                        <li><a href="https://stake.bet/?c=StakeKatogus" target="_blank" class="text-gray-400 hover:text-white">Stake Casino</a></li>
+                        <li><a href="https://shock.com/?r=Katogus" target="_blank" class="text-gray-400 hover:text-white">Shock Casino</a></li>
+                        <li><a href="https://www.razed.com/signup/?raf=Katogus" target="_blank" class="text-gray-400 hover:text-white">Razed Casino</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">Legal</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Responsible Gaming</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="text-center">
+                    <p class="text-gray-400 mb-6">© 2024 Katogus.gg. All rights reserved.</p>
+                    <div class="mb-6">
+                        <a href="#" class="inline-block">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" alt="18+" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <p class="text-gray-500 text-sm max-w-3xl mx-auto">
+                        Gambling involves risk and should not be undertaken as a financial solution. Only gamble with money you can afford to lose. Gambling can be addictive, please play responsibly. Katogus.gg is an affiliate site that may receive commission from casino operators.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeButton = document.getElementById('close-mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+        
+        closeButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+        
+        // Mobile Menu Links Close Menu When Clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Accordion Functionality
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                
+                // Toggle active class on header
+                header.classList.toggle('active');
+                
+                // Toggle content display
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, // Account for fixed header
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Active Navigation Link Highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
