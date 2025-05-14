@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenBoost - Optimisez votre PC pour des performances gaming maximales</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --genboost-blue: #00a8ff;
+            --genboost-dark-blue: #0097e6;
+        }
+        body {
+            background-color: #0f0f0f;
+            color: #f1f1f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .btn-primary {
+            background-color: var(--genboost-blue);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: var(--genboost-dark-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 168, 255, 0.3);
+        }
+        .game-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .game-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--genboost-blue);
+            box-shadow: 0 10px 20px rgba(0, 168, 255, 0.2);
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background-color: #1a1a1a;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #00a8ff, #0097e6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .team-card {
+            transition: all 0.3s ease;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-3px);
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -3px;
+            left: 0;
+            background-color: var(--genboost-blue);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .animated-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+            background: 
+                radial-gradient(circle at 20% 35%, var(--genboost-blue) 0%, transparent 25%),
+                radial-gradient(circle at 75% 65%, var(--genboost-blue) 0%, transparent 25%);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="fixed w-full z-50 bg-black bg-opacity-90 backdrop-filter backdrop-blur-lg shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="ae8faeb7-5f1e-4e49-9709-a34d40aba0cc-removebg-preview.png" alt="GenBoost Logo" class="h-12">
+                </div>
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#accueil" class="nav-link text-white hover:text-blue-400">Accueil</a>
+                    <a href="#fonctionnalites" class="nav-link text-white hover:text-blue-400">Fonctionnalités</a>
+                    <a href="#jeux" class="nav-link text-white hover:text-blue-400">Jeux Supportés</a>
+                    <a href="#temoignages" class="nav-link text-white hover:text-blue-400">Témoignages</a>
+                    <a href="#equipe" class="nav-link text-white hover:text-blue-400">Notre Équipe</a>
+                </nav>
+                <a href="https://test.bet" class="btn-primary text-white font-bold py-2 px-4 rounded-full">
+                    Télécharger
+                    <i class="fas fa-download ml-2"></i>
+                </a>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="relative min-h-screen flex items-center pt-5">
+        <div class="animated-bg"></div>
+        <div class="container mx-auto px-4 py-20">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Boostez Vos <span class="gradient-text">Performances Gaming</span> Avec GenBoost</h1>
+                    <p class="text-xl text-gray-300 mb-8">Optimisez votre PC pour une expérience de jeu fluide et sans lag. Augmentez vos FPS et profitez d'un gameplay au maximum de ses capacités.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
+                        <a href="https://test.bet" class="btn-primary text-center text-white font-bold py-3 px-8 rounded-full text-lg">
+                            Télécharger Gratuitement
+                            <i class="fas fa-download ml-2"></i>
+                        </a>
+                        <a href="#fonctionnalites" class="bg-transparent hover:bg-gray-800 text-center text-white font-semibold py-3 px-8 border border-white hover:border-transparent rounded-full transition duration-300 text-lg">
+                            En savoir plus
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex -space-x-2">
+                            <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-xs text-white">JT</div>
+                            <div class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-xs text-white">ML</div>
+                            <div class="w-8 h-8 rounded-full bg-yellow-600 flex items-center justify-center text-xs text-white">RK</div>
+                            <div class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-xs text-white">SP</div>
+                        </div>
+                        <p class="ml-4 text-sm"><span class="font-bold text-blue-400">+1,000</span> gamers satisfaits</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-lg">
+                        <div class="absolute -top-10 -left-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+                        <div class="absolute -bottom-8 -right-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+                        <div class="relative float">
+                            <img src="ae8faeb7-5f1e-4e49-9709-a34d40aba0cc-removebg-preview.png" alt="GenBoost Logo" class="object-cover h-64 mx-auto">
+                            <div class="bg-black bg-opacity-80 p-6 rounded-2xl mt-800000 border border-gray-800">
+                                <div class="flex justify-between items-center mb-4">
+                                    <div>
+                                        <h3 class="font-bold text-xl text-blue-400">GenBoost v2.1</h3>
+                                        <p class="text-gray-400">Dernière mise à jour : 15/05/2025</p>
+                                    </div>
+                                    <span class="px-3 py-1 bg-green-900 text-green-300 rounded-full text-xs">Gratuit</span>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-gray-400">Amélioration FPS</span>
+                                        <span class="text-green-400">Inclus</span>
+                                    </div>
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-gray-400">Amélioration Graphismes</span>
+                                        <span class="text-green-400">Inclus</span>
+                                    </div>
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-gray-400">Amélioration Stream</span>
+                                        <span class="text-green-400">Inclus</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="fonctionnalites" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Fonctionnalités <span class="gradient-text">Avancées</span></h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">GenBoost optimise votre système pour vous offrir les meilleures performances possibles lors de vos sessions de jeu.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-800">
+                    <div class="w-14 h-14 bg-blue-900 bg-opacity-30 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-2xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Boost de FPS</h3>
+                    <p class="text-gray-400 mb-4">Augmentez vos FPS jusqu'à 150% pour une expérience de jeu plus fluide et sans saccades, même sur des configurations modestes.</p>
+                    <ul class="text-gray-400">
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Optimisation de la mémoire
+                        </li>
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Gestion intelligente des ressources
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Réduction de la latence
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-800">
+                    <div class="w-14 h-14 bg-blue-900 bg-opacity-30 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-paint-brush text-2xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Amélioration Graphique</h3>
+                    <p class="text-gray-400 mb-4">Profitez d'une qualité visuelle améliorée sans compromettre les performances grâce à nos algorithmes d'optimisation avancés.</p>
+                    <ul class="text-gray-400">
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Équilibre entre qualité et performance
+                        </li>
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Réglages automatiques des paramètres
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Réduction des artefacts visuels
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-800">
+                    <div class="w-14 h-14 bg-blue-900 bg-opacity-30 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-video text-2xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Mode Stream</h3>
+                    <p class="text-gray-400 mb-4">Diffusez votre gameplay en direct sans ralentissement grâce à notre mode optimisé pour le streaming.</p>
+                    <ul class="text-gray-400">
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Encodage optimisé
+                        </li>
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Fonctionne avec OBS, Streamlabs, etc.
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Stabilité pendant les sessions longues
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-800">
+                    <div class="w-14 h-14 bg-blue-900 bg-opacity-30 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-gamepad text-2xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Profils de Jeux</h3>
+                    <p class="text-gray-400 mb-4">Des profils personnalisés pour chaque jeu, s'adaptant automatiquement lorsque vous lancez votre titre préféré.</p>
+                    <ul class="text-gray-400">
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Détection automatique des jeux
+                        </li>
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Paramètres optimisés par jeu
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Personnalisation avancée
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-800">
+                    <div class="w-14 h-14 bg-blue-900 bg-opacity-30 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Mode Anti-Lag</h3>
+                    <p class="text-gray-400 mb-4">Réduisez considérablement la latence et les temps de réponse pour un avantage compétitif décisif.</p>
+                    <ul class="text-gray-400">
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Priorisation des processus de jeu
+                        </li>
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Réduction de l'input lag
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Stabilisation de la connexion
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-800">
+                    <div class="w-14 h-14 bg-blue-900 bg-opacity-30 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-sliders-h text-2xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Interface Intuitive</h3>
+                    <p class="text-gray-400 mb-4">Une interface claire et facile à utiliser, même pour les débutants, avec des options avancées pour les experts.</p>
+                    <ul class="text-gray-400">
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Design moderne et intuitif
+                        </li>
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Suivi des performances en temps réel
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Options de personnalisation étendues
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Support Section -->
+    <section id="jeux" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Jeux <span class="gradient-text">Supportés</span></h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">GenBoost s'adapte automatiquement à vos jeux préférés pour une expérience optimale.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <!-- Game 1 -->
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-4 text-center">
+                        <i class="fas fa-gamepad text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="font-bold">Fortnite</h3>
+                        <span class="text-xs text-green-400">+120% FPS</span>
+                    </div>
+                </div>
+                
+                <!-- Game 2 -->
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-4 text-center">
+                        <i class="fas fa-cube text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="font-bold">Minecraft</h3>
+                        <span class="text-xs text-green-400">+150% FPS</span>
+                    </div>
+                </div>
+                
+                <!-- Game 3 -->
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-4 text-center">
+                        <i class="fas fa-crosshairs text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="font-bold">Valorant</h3>
+                        <span class="text-xs text-green-400">+100% FPS</span>
+                    </div>
+                </div>
+                
+                <!-- Game 4 -->
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-4 text-center">
+                        <i class="fas fa-car text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="font-bold">GTA V</h3>
+                        <span class="text-xs text-green-400">+80% FPS</span>
+                    </div>
+                </div>
+                
+                <!-- Game 5 -->
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-4 text-center">
+                        <i class="fas fa-user-ninja text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="font-bold">CS:GO</h3>
+                        <span class="text-xs text-green-400">+110% FPS</span>
+                    </div>
+                </div>
+                
+                <!-- Game 6 -->
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-4 text-center">
+                        <i class="fas fa-ghost text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="font-bold">Call of Duty</h3>
+                        <span class="text-xs text-green-400">+90% FPS</span>
+                    </div>
+                </div>
+                
+                <!-- Game 7 -->
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-4 text-center">
+                        <i class="fas fa-dragon text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="font-bold">League of Legends</h3>
+                        <span class="text-xs text-green-400">+130% FPS</span>
+                    </div>
+                </div>
+                
+                <!-- Game 8 -->
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-4 text-center">
+                        <i class="fas fa-fist-raised text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="font-bold">Apex Legends</h3>
+                        <span class="text-xs text-green-400">+95% FPS</span>
+                    </div>
+                </div>
+                
+                <!-- Game 9 -->
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-4 text-center">
+                        <i class="fas fa-shield-alt text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="font-bold">Overwatch</h3>
+                        <span class="text-xs text-green-400">+100% FPS</span>
+                    </div>
+                </div>
+                
+                <!-- Game 10 -->
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-4 text-center">
+                        <i class="fas fa-running text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="font-bold">PUBG</h3>
+                        <span class="text-xs text-green-400">+85% FPS</span>
+                    </div>
+                </div>
+                
+                <!-- Game 11 -->
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-4 text-center">
+                        <i class="fas fa-futbol text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="font-bold">FIFA 25</h3>
+                        <span class="text-xs text-green-400">+70% FPS</span>
+                    </div>
+                </div>
+                
+                <!-- Game 12 -->
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-4 text-center">
+                        <i class="fas fa-plus text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="font-bold">Et bien plus...</h3>
+                        <span class="text-xs text-green-400">Support continu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Section -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">La <span class="gradient-text">Différence</span> GenBoost</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Voyez la différence impressionnante avant et après l'utilisation de GenBoost.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Before -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden">
+                    <div class="p-4 bg-red-900 text-center">
+                        <h3 class="text-xl font-bold">AVANT GenBoost</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-400">Fortnite</span>
+                            <span class="text-red-400 font-bold">42 FPS</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-4 mb-6">
+                            <div class="bg-red-500 h-4 rounded-full" style="width: 42%"></div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-400">Valorant</span>
+                            <span class="text-red-400 font-bold">78 FPS</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-4 mb-6">
+                            <div class="bg-red-500 h-4 rounded-full" style="width: 60%"></div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-400">GTA V</span>
+                            <span class="text-red-400 font-bold">53 FPS</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-4 mb-6">
+                            <div class="bg-red-500 h-4 rounded-full" style="width: 53%"></div>
+                        </div>
+                        
+                        <div class="p-4 bg-gray-800 rounded-lg text-center">
+                            <ul class="text-left text-gray-400">
+                                <li class="mb-2 flex items-center">
+                                    <i class="fas fa-times text-red-500 mr-2"></i>
+                                    Saccades fréquentes
+                                </li>
+                                <li class="mb-2 flex items-center">
+                                    <i class="fas fa-times text-red-500 mr-2"></i>
+                                    Temps de chargement longs
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-times text-red-500 mr-2"></i>
+                                    Latence élevée
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- After -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden">
+                    <div class="p-4 bg-blue-900 text-center">
+                        <h3 class="text-xl font-bold">APRÈS GenBoost</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-400">Fortnite</span>
+                            <span class="text-green-400 font-bold">118 FPS</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-4 mb-6">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 92%"></div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-400">Valorant</span>
+                            <span class="text-green-400 font-bold">163 FPS</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-4 mb-6">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 95%"></div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-400">GTA V</span>
+                            <span class="text-green-400 font-bold">112 FPS</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-4 mb-6">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 85%"></div>
+                        </div>
+                        
+                        <div class="p-4 bg-gray-800 rounded-lg text-center">
+                            <ul class="text-left text-gray-400">
+                                <li class="mb-2 flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    Gameplay fluide et sans saccades
+                                </li>
+                                <li class="mb-2 flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    Chargements accélérés
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    Latence minimale
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="temoignages" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Ce Que Disent Nos <span class="gradient-text">Utilisateurs</span></h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Découvrez les témoignages de joueurs qui ont transformé leur expérience de jeu grâce à GenBoost.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-lg font-bold mr-4">TL</div>
+                        <div>
+                            <h4 class="font-bold">Thomas L.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Avec mon PC vieillissant, je ne pouvais plus jouer à Fortnite correctement. Grâce à GenBoost, j'ai gagné plus de 80 FPS et je peux de nouveau être compétitif!"</p>
+                    <div class="flex items-center text-sm text-gray-400">
+                        <i class="fas fa-gamepad mr-2"></i>
+                        <span>Fortnite - 230h de jeu</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-lg font-bold mr-4">LM</div>
+                        <div>
+                            <h4 class="font-bold">Lucie M.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"J'adore streamer mes parties de Valorant, mais mon PC n'arrivait pas à gérer le jeu et OBS en même temps. Le mode Stream de GenBoost a réglé tous mes problèmes!"</p>
+                    <div class="flex items-center text-sm text-gray-400">
+                        <i class="fas fa-gamepad mr-2"></i>
+                        <span>Valorant - 540h de jeu</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center text-lg font-bold mr-4">KR</div>
+                        <div>
+                            <h4 class="font-bold">Kevin R.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Je pensais devoir acheter un nouveau PC pour jouer à GTA V, mais après avoir installé GenBoost, non seulement le jeu tourne parfaitement, mais en plus la qualité graphique est meilleure!"</p>
+                    <div class="flex items-center text-sm text-gray-400">
+                        <i class="fas fa-gamepad mr-2"></i>
+                        <span>GTA V - 780h de jeu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipe" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Notre <span class="gradient-text">Équipe</span></h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Une équipe passionnée de développeurs et de gamers qui travaillent sans relâche pour améliorer votre expérience de jeu.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="team-card bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-800 text-center">
+                    <div class="w-24 h-24 rounded-full bg-blue-600 mx-auto flex items-center justify-center text-3xl font-bold mb-4">MB</div>
+                    <h3 class="text-xl font-bold mb-1">Maxime Bernier</h3>
+                    <p class="text-blue-400 mb-4">Fondateur & Lead Developer</p>
+                    <p class="text-gray-400 mb-4">"Notre mission est de permettre à tous les joueurs d'avoir une expérience gaming optimale, quel que soit leur matériel."</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-card bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-800 text-center">
+                    <div class="w-24 h-24 rounded-full bg-green-600 mx-auto flex items-center justify-center text-3xl font-bold mb-4">SC</div>
+                    <h3 class="text-xl font-bold mb-1">Sophie Caron</h3>
+                    <p class="text-blue-400 mb-4">Développeuse Backend</p>
+                    <p class="text-gray-400 mb-4">"L'optimisation est un art. Notre algorithme analyse en temps réel pour maximiser les performances de votre PC pendant vos sessions."</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="team-card bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-800 text-center">
+                    <div class="w-24 h-24 rounded-full bg-yellow-600 mx-auto flex items-center justify-center text-3xl font-bold mb-4">AR</div>
+                    <h3 class="text-xl font-bold mb-1">Alexandre Rousseau</h3>
+                    <p class="text-blue-400 mb-4">Expert en UX/UI</p>
+                    <p class="text-gray-400 mb-4">"Une interface intuitive et efficace est essentielle. Nous voulons que GenBoost soit accessible à tous les gamers."</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="team-card bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-800 text-center">
+                    <div class="w-24 h-24 rounded-full bg-red-600 mx-auto flex items-center justify-center text-3xl font-bold mb-4">JL</div>
+                    <h3 class="text-xl font-bold mb-1">Julie Lavoie</h3>
+                    <p class="text-blue-400 mb-4">Game Integration Specialist</p>
+                    <p class="text-gray-400 mb-4">"Chaque jeu est unique et nécessite une approche personnalisée. Nous travaillons avec passion pour optimiser chaque titre."</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-twitch"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-900 to-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 left-0 w-full h-full bg-repeat" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIHN0cm9rZT0iIzAwYThmZiIgc3Ryb2tlLXdpZHRoPSIxIiBjeD0iMTAiIGN5PSIxMCIgcj0iMyIvPjwvZz48L3N2Zz4=');"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Prêt à Booster Votre <span class="text-blue-400">Expérience Gaming</span>?</h2>
+                <p class="text-xl text-gray-300 mb-8">Téléchargez gratuitement GenBoost et transformez votre PC en machine de guerre pour le gaming. Aucune carte de crédit requise.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center mb-12">
+                    <a href="https://test.bet" class="btn-primary text-center text-white font-bold py-4 px-10 rounded-full text-lg flex items-center justify-center">
+                        <i class="fas fa-download text-2xl mr-3"></i>
+                        <div>
+                            <div class="text-xs">Télécharger maintenant</div>
+                            <div>100% Gratuit</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-xl">
+                    <div class="flex flex-wrap justify-center items-center text-sm text-gray-300 mb-4">
+                        <div class="flex items-center m-2">
+                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                            <span>Windows 10/11</span>
+                        </div>
+                        <div class="flex items-center m-2">
+                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                            <span>Mise à jour régulière</span>
+                        </div>
+                        <div class="flex items-center m-2">
+                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                            <span>Support technique</span>
+                        </div>
+                        <div class="flex items-center m-2">
+                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                            <span>Sans malware</span>
+                        </div>
+                    </div>
+                    <div class="text-xs text-gray-400">
+                        Version 2.1.4 | Dernière mise à jour: 15/05/2025
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4"><span class="gradient-text">FAQ</span></h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Questions fréquemment posées à propos de GenBoost.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="mb-6">
+                    <button class="flex justify-between items-center w-full p-4 bg-gray-900 rounded-lg text-left font-bold hover:bg-gray-800 transition-all">
+                        <span>GenBoost est-il vraiment 100% gratuit?</span>
+                        <i class="fas fa-chevron-down text-blue-400"></i>
+                    </button>
+                    <div class="bg-gray-800 p-4 rounded-b-lg mt-1">
+                        <p class="text-gray-300">Oui, GenBoost est entièrement gratuit. Nous croyons que tous les joueurs méritent une expérience de jeu optimale quelles que soient leurs ressources financières. Nous proposons également une version Premium avec des fonctionnalités avancées pour les utilisateurs qui souhaitent aller encore plus loin.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="mb-6">
+                    <button class="flex justify-between items-center w-full p-4 bg-gray-900 rounded-lg text-left font-bold hover:bg-gray-800 transition-all">
+                        <span>GenBoost est-il sûr pour mon ordinateur?</span>
+                        <i class="fas fa-chevron-down text-blue-400"></i>
+                    </button>
+                    <div class="bg-gray-800 p-4 rounded-b-lg mt-1">
+                        <p class="text-gray-300">Absolument. GenBoost a été développé avec la sécurité comme priorité. Notre logiciel n'altère aucun fichier système critique et toutes les modifications sont réversibles. De plus, nous soumettons régulièrement notre logiciel à des tests de sécurité approfondis.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="mb-6">
+                    <button class="flex justify-between items-center w-full p-4 bg-gray-900 rounded-lg text-left font-bold hover:bg-gray-800 transition-all">
+                        <span>Comment GenBoost améliore-t-il les performances?</span>
+                        <i class="fas fa-chevron-down text-blue-400"></i>
+                    </button>
+                    <div class="bg-gray-800 p-4 rounded-b-lg mt-1">
+                        <p class="text-gray-300">GenBoost utilise plusieurs techniques avancées: optimisation de la mémoire, priorisation des processus, ajustement intelligent des paramètres graphiques, et suppression des services inutiles en arrière-plan. Notre technologie s'adapte à chaque jeu et à votre configuration matérielle pour des résultats optimaux.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="mb-6">
+                    <button class="flex justify-between items-center w-full p-4 bg-gray-900 rounded-lg text-left font-bold hover:bg-gray-800 transition-all">
+                        <span>Puis-je utiliser GenBoost pour le streaming?</span>
+                        <i class="fas fa-chevron-down text-blue-400"></i>
+                    </button>
+                    <div class="bg-gray-800 p-4 rounded-b-lg mt-1">
+                        <p class="text-gray-300">Oui, notre mode Stream est spécialement conçu pour permettre une diffusion fluide tout en jouant. Il optimise l'encodage vidéo et équilibre les ressources entre votre jeu et votre logiciel de streaming comme OBS ou Streamlabs.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div>
+                    <button class="flex justify-between items-center w-full p-4 bg-gray-900 rounded-lg text-left font-bold hover:bg-gray-800 transition-all">
+                        <span>GenBoost fonctionne-t-il avec tous les jeux?</span>
+                        <i class="fas fa-chevron-down text-blue-400"></i>
+                    </button>
+                    <div class="bg-gray-800 p-4 rounded-b-lg mt-1">
+                        <p class="text-gray-300">GenBoost est compatible avec la plupart des jeux populaires et notre équipe ajoute régulièrement de nouveaux titres. Pour les jeux qui ne sont pas encore spécifiquement supportés, notre mode d'optimisation générale offre tout de même des améliorations significatives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <img src="https://page1.genspark.site/v1/base64_upload/4896fac847592a9b62ecc34f1c82141a" alt="GenBoost Logo" class="h-12 mb-4">
+                    <p class="text-gray-400 max-w-md">GenBoost - La solution ultime pour optimiser votre PC et profiter d'une expérience de jeu incomparable.</p>
+                </div>
+                
+                <div>
+                    <div class="flex flex-wrap justify-center md:justify-end gap-4 mb-8">
+                        <a href="#accueil" class="text-gray-400 hover:text-blue-400">Accueil</a>
+                        <a href="#fonctionnalites" class="text-gray-400 hover:text-blue-400">Fonctionnalités</a>
+                        <a href="#jeux" class="text-gray-400 hover:text-blue-400">Jeux Supportés</a>
+                        <a href="#temoignages" class="text-gray-400 hover:text-blue-400">Témoignages</a>
+                        <a href="#equipe" class="text-gray-400 hover:text-blue-400">Notre Équipe</a>
+                    </div>
+                    <div class="flex justify-center md:justify-end space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-gray-800 my-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+                <p>&copy; 2025 GenBoost. Tous droits réservés.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-blue-400">Politique de confidentialité</a>
+                    <a href="#" class="hover:text-blue-400">Conditions d'utilisation</a>
+                    <a href="#" class="hover:text-blue-400">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/js/all.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Simple FAQ toggle
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                button.classList.toggle('active');
+                
+                if (button.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    content.style.maxHeight = 0;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
